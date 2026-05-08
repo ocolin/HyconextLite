@@ -1,8 +1,8 @@
 composer.phar
 /vendor/
 .*
+!.env.example
 !.gitignore
-!.env.exmaple
 test.php
 dev
 coverage
