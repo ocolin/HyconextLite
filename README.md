@@ -1,3 +1,7 @@
+[![Latest Version](https://img.shields.io/packagist/v/ocolin/hyconext-lite)](https://packagist.org/packages/ocolin/hyconext-lite)
+[![PHP Version](https://img.shields.io/packagist/dependency-v/ocolin/hyconext-lite/php)](https://packagist.org/packages/ocolin/hyconext-lite)
+[![Total Downloads](https://img.shields.io/packagist/dt/ocolin/hyconext-lite)](https://packagist.org/packages/ocolin/hyconext-lite)
+[![License](https://img.shields.io/packagist/l/ocolin/hyconext-lite)](https://packagist.org/packages/ocolin/hyconext-lite)
 # ocolin/hyconext-lite
 
 A PHP HTTP client for Hyconext network switches that expose a web GUI only, with no documented REST API. This library reverse-engineers the device's internal JSON endpoints to provide programmatic access to switch data.
