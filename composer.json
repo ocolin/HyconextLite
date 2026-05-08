@@ -1,0 +1,45 @@
+{
+    "name": "ocolin/hyconext-lite",
+    "description": "PHP client for Hyconext web-GUI-only network switches, providing programmatic access to switch data via internal JSON endpoints.",
+    "keywords": ["hyconext", "network", "switch", "http-client", "api-client"],
+    "support": {
+        "issues": "https://github.com/ocolin/hyconext-lite/issues",
+        "source": "https://github.com/ocolin/hyconext-lite"
+    },
+    "type": "library",
+    "homepage": "https://github.com/ocolin/hyconext-lite",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.4",
+        "guzzlehttp/guzzle": "^7.10",
+        "ocolin/global-type": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.1",
+        "phpstan/phpstan": "^2.1",
+        "ocolin/easyenv": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ocolin\\HyconextLite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ocolin\\HyconextLite\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Colin Miller",
+            "email": "ocolin@cruzio.com"
+        }
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit --no-coverage --display-deprecations --display-notices",
+        "debug": "vendor/bin/phpunit --no-coverage --display-deprecations --display-notices --debug",
+        "integration": "vendor/bin/phpunit --no-coverage --group integration",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
+    }
+}
